@@ -8,6 +8,12 @@ If the argument is empty, null or undefined, return "Hello World":
 */
 
 // TODO your code:
+function sayHello(name) {
+    if(name === "" || name === null){
+        name = "World"
+    }
+    return `Hello ${name}`
+}
 
 // Begin of tests
 const assert = require("assert");
