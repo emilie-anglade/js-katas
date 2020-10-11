@@ -14,8 +14,6 @@ You can't use the function Math.min()
 
 // TODO your code:
 
-
-
 // Begin of tests
 const assert = require("assert");
 
