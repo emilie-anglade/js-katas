@@ -14,14 +14,7 @@ You can't use the function Math.min()
 
 // TODO your code:
 
-const min = (array) => {
-  if ((array.length) === 0){
-    return null
-  }
-  else{
-    return array[0]
-  }
-}
+
 
 // Begin of tests
 const assert = require("assert");
