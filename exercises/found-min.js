@@ -14,19 +14,21 @@ You can't use the function Math.min()
 
 // TODO your code:
 
-function min (array) {
-  if (array=[]) {
+const min = (array) => {
+  if ((array === null) || (array.length === 0)) {
     return null;
   }
-
-  else if (array === null) {
-    return null;
-  }
-
   else {
-    return array[0]
+    let result = array[0];
+    for (let i = 0; i < array.length; i++)
+
+      if (array[i] < result) {
+          result = array[i]
+    }
+    return result
   }
 }
+
 
 // Begin of tests
 const assert = require("assert");

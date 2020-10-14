@@ -11,6 +11,25 @@ Example:
 
 // TODO your code:
 
+const sum = (array) => {
+    
+    if ((array === null) || (array.length === 0)) {
+        return 0;
+    }
+
+    else {
+        let result = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] % 2 !== 0) {
+                result += array[i]; 
+            }
+        }
+        return result;
+    }
+
+
+}
+
 // Begin of tests
 const assert = require("assert");
 
