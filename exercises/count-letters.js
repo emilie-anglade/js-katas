@@ -18,11 +18,31 @@ Add you own tests.
 
 // TODO your code:
 
+const countChar = (string, character) => {
+    if ((string === null)||(character > 1)) {
+        return -1
+    }
+
+    else {
+        let countLetter = 0;
+        for (let i = 0; i < string.length; i++) {
+            if (i === character) {
+                countLetter += 1
+            }
+        }
+        return countLetter;
+    }
+}
+
 // Begin of tests
 const assert = require("assert");
 
 assert.strictEqual(typeof countChar, "function");
 assert.strictEqual(countChar.length, 2);
 // TODO add your tests:
-
+assert.strictEqual(countChar(null, a), -1);
+assert.strictEqual(countChar("", a), 0);
+assert.strictEqual(countChar(hello, h), 1);
+assert.strictEqual(countChar(abracadabra, a), 5);
+assert.strictEqual(countChar(abracadabra, b), 2);
 // End of tests
