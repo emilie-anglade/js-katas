@@ -16,6 +16,19 @@ Don't mutate the parameter.
 
 // TODO your code:
 
+const inverse = (array) => {
+    if ((array === null) || (array.length === 0)) {
+        return []
+    }
+    else {
+        let opposite = []
+        for (let i = 0; i < array.length; i++) {
+            opposite.push(array[i] * -1)
+        }
+        return opposite
+    }
+}
+
 // Begin of tests
 const assert = require("assert");
 
